@@ -77,7 +77,7 @@ const AllProduct = () => {
                                                 ?
                                                 <button
                                                     onClick={() => deleteCart(item)}
-                                                    className=" bg-red-700 hover:bg-blue-600 w-full text-white py-[4px] rounded-lg font-bold">
+                                                    className=" bg-red-700 hover:bg-black w-full text-white py-[4px] rounded-lg font-bold">
                                                     Delete From Cart
                                                 </button>
 
@@ -85,7 +85,7 @@ const AllProduct = () => {
 
                                                 <button
                                                     onClick={() => addCart(item)}
-                                                    className=" bg-blue-500 hover:bg-blue-600 w-full text-white py-[4px] rounded-lg font-bold">
+                                                    className=" bg-black hover:bg-black w-full text-white py-[4px] rounded-lg font-bold">
                                                     Add To Cart
                                                 </button>
                                             }

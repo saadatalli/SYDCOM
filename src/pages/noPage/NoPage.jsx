@@ -1,7 +1,8 @@
 const NoPage = () => {
     return (
         <div>
-            No Page
+            Sahi se search kro
+            <img src="../img/dobara.jpg" alt="" />
         </div>
     );
 }

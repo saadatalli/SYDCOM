@@ -73,11 +73,11 @@ const Login = () => {
         <div className='flex justify-center items-center h-screen'>
             {loading && <Loader />}
             {/* Login Form  */}
-            <div className="login_Form bg-blue-50 px-8 py-6 border border-blue-100 rounded-xl shadow-md">
+            <div className="login_Form bg-black-50 px-8 py-6 border border-black-100 rounded-xl shadow-md">
 
                 {/* Top Heading  */}
                 <div className="mb-5">
-                    <h2 className='text-center text-2xl font-bold text-blue-500 '>
+                    <h2 className='text-center text-2xl font-bold text-black-500 '>
                         Login
                     </h2>
                 </div>
@@ -95,7 +95,7 @@ const Login = () => {
                                 email: e.target.value
                             })
                         }}
-                        className='bg-blue-50 border border-blue-200 px-2 py-2 w-96 rounded-md outline-none placeholder-blue-200'
+                        className='bg-black-50 border border-black-200 px-2 py-2 w-96 rounded-md outline-none placeholder-black-200'
                     />
                 </div>
 
@@ -111,7 +111,7 @@ const Login = () => {
                                 password: e.target.value
                             })
                         }}
-                        className='bg-blue-50 border border-blue-200 px-2 py-2 w-96 rounded-md outline-none placeholder-blue-200'
+                        className='bg-black-50 border border-black-200 px-2 py-2 w-96 rounded-md outline-none placeholder-black-200'
                     />
                 </div>
 
@@ -120,14 +120,14 @@ const Login = () => {
                     <button
                         type='button'
                         onClick={userLoginFunction}
-                        className='bg-blue-500 hover:bg-blue-600 w-full text-white text-center py-2 font-bold rounded-md '
+                        className='bg-black hover:bg-black-600 w-full text-white text-center py-2 font-bold rounded-md '
                     >
                         Login
                     </button>
                 </div>
 
                 <div>
-                    <h2 className='text-black'>Don't Have an account <Link className=' text-blue-500 font-bold' to={'/signup'}>Signup</Link></h2>
+                    <h2 className='text-black'>Don't Have an account <Link className=' text-black-500 font-bold' to={'/signup'}>Signup</Link></h2>
                 </div>
 
             </div>

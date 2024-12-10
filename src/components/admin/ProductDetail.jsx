@@ -34,7 +34,7 @@ const ProductDetail = () => {
                 <h1 className=" text-xl text-black  font-bold">All Product</h1>
                 {/* Add Product Button  */}
                 <Link to={'/addproduct'}>
-                    <button className="px-5 py-2 bg-black text-whiteS border border-black  rounded-lg">Add Product</button>
+                    <button className="px-5 py-2 bg-black text-white border border-black  rounded-lg">Add Product</button>
                 </Link>
             </div>
 

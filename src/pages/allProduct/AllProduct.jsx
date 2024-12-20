@@ -28,7 +28,6 @@ const AllProduct = () => {
         toast.success("Delete cart")
     }
 
-    // console.log(cartItems)
 
     useEffect(() => {
         localStorage.setItem('cart', JSON.stringify(cartItems));
@@ -36,12 +35,10 @@ const AllProduct = () => {
     return (
         <Layout>
     <div className="py-8">
-            {/* Heading  */}
             <div className="">
                 <h1 className=" text-center mb-5 text-2xl font-semibold">All Products</h1>
             </div>
 
-            {/* main  */}
             <section className="text-gray-600 body-font">
                 <div className="container px-5 lg:px-0 py-5 mx-auto">
                 <div className="flex justify-center">

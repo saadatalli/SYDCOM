@@ -37,10 +37,8 @@ const AddProductPage = () => {
     const context = useContext(myContext);
     const { loading, setLoading } = context;
 
-    // navigate 
     const navigate = useNavigate();
 
-    // product state
     const [product, setProduct] = useState({
         title: "",
         price: "",
@@ -60,7 +58,6 @@ const AddProductPage = () => {
     });
 
 
-    // Add Product Function
     const addProductFunction = async () => {
         if (product.title == "" || product.price == "" || product.productImageUrl == "" || product.category == "" || product.description == "") {
             return toast.error("all fields are required")
@@ -84,17 +81,14 @@ const AddProductPage = () => {
         <div>
             <div className='flex justify-center items-center h-screen'>
                 {loading && <Loader />}
-                {/* Login Form  */}
                 <div className="login_Form bg-white px-8 py-6 border border-black-100 rounded-xl shadow-md">
 
-                    {/* Top Heading  */}
                     <div className="mb-5">
                         <h2 className='text-center text-2xl font-bold text-black '>
                             Add Product
                         </h2>
                     </div>
 
-                    {/* Input One  */}
                     <div className="mb-3">
                         <input
                             type="text"
@@ -111,7 +105,6 @@ const AddProductPage = () => {
                         />
                     </div>
 
-                    {/* Input Two  */}
                     <div className="mb-3">
                         <input
                             type="number"
@@ -128,7 +121,6 @@ const AddProductPage = () => {
                         />
                     </div>
 
-                    {/* Input Three  */}
                     <div className="mb-3">
                         <input
                             type="text"
@@ -145,7 +137,6 @@ const AddProductPage = () => {
                         />
                     </div>
 
-                    {/* Input Four  */}
                     <div className="mb-3">
                         <select
                             value={product.category}
@@ -166,7 +157,6 @@ const AddProductPage = () => {
                         </select>
                     </div>
 
-                    {/* Input Five  */}
                     <div className="mb-3">
                         <textarea
                             value={product.description}
@@ -180,7 +170,6 @@ const AddProductPage = () => {
                         </textarea>
                     </div>
 
-                    {/* Add Product Button  */}
                     <div className="mb-3">
                         <button
                             onClick={addProductFunction}

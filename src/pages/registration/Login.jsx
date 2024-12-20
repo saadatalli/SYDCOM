@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import myContext from "../../context/myContext";
@@ -12,18 +11,12 @@ const Login = () => {
     const context = useContext(myContext);
     const { loading, setLoading } = context;
 
-    // navigate 
     const navigate = useNavigate();
 
-    // User Signup State 
     const [userLogin, setUserLogin] = useState({
         email: "",
         password: ""
     });
-
-    /**========================================================================
-     *                          User Login Function 
-    *========================================================================**/
 
     const userLoginFunction = async () => {
         // validation 
@@ -75,14 +68,12 @@ const Login = () => {
             {/* Login Form  */}
             <div className="login_Form bg-black-50 px-8 py-6 border border-black-100 rounded-xl shadow-md">
 
-                {/* Top Heading  */}
                 <div className="mb-5">
                     <h2 className='text-center text-2xl font-bold text-black-500 '>
                         Login
                     </h2>
                 </div>
 
-                {/* Input One  */}
                 <div className="mb-3">
                     <input
                         type="email"
@@ -99,7 +90,6 @@ const Login = () => {
                     />
                 </div>
 
-                {/* Input Two  */}
                 <div className="mb-5">
                     <input
                         type="password"
@@ -115,7 +105,6 @@ const Login = () => {
                     />
                 </div>
 
-                {/* Signup Button  */}
                 <div className="mb-5">
                     <button
                         type='button'
